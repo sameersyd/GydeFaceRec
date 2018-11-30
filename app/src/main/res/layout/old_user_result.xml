@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#00000000">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/green_gradient_result"
+            android:layout_alignBottom="@id/lineEnd"
+            android:alpha="0.5"/>
+
+        <ImageView
+            android:id="@+id/gydeLogo"
+            android:layout_alignParentEnd="true"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="8dp"
+            android:src="@drawable/gyde_logo"/>
+
+        <RelativeLayout
+            android:id="@+id/relaOne"
+            android:layout_below="@id/gydeLogo"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome back "
+                android:textColor="#FFF"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="27sp"/>
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Gregory!"
+                android:textStyle="bold"
+                android:layout_toRightOf="@id/welcome"
+                android:textColor="#FFF"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="27sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relaGender"
+            android:layout_below="@id/relaOne"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/genderTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="#FFF"
+                android:text="Gender: "
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/result_oldUser_gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/genderTxt"
+                android:textColor="#FFF"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="25sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relaAge"
+            android:layout_below="@id/relaGender"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/ageTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="#FFF"
+                android:text="Age: "
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/result_oldUser_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ageTxt"
+                android:textColor="#FFF"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="25sp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relaEmo"
+            android:layout_below="@id/relaAge"
+            android:layout_marginLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                android:id="@+id/emoTxt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25sp"
+                android:textColor="#FFF"
+                android:text="Mood: "
+                android:fontFamily="sans-serif-condensed"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/result_oldUser_mood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/emoTxt"
+                android:textColor="#FFF"
+                android:fontFamily="sans-serif-condensed"
+                android:textSize="25sp"/>
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/ques"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-condensed"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:layout_below="@id/relaEmo"
+            android:textColor="#FFF"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginBottom="10dp"
+            android:text="Ready for your personalised experience?"/>
+
+        <Button
+            android:id="@+id/linBef"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:text="Let's ride!"
+            android:textColor="#FFF"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:elevation="6dp"
+            android:background="@drawable/orange_gradient_btn"
+            android:layout_below="@id/ques"
+            android:layout_margin="20dp"/>
+
+        <LinearLayout
+            android:id="@+id/lineEnd"
+            android:layout_below="@id/linBef"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
